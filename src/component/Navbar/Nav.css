@@ -1,0 +1,116 @@
+body {
+  overflow: hidden;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 72px;
+  padding: 0 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  font-weight: 500;
+}
+
+nav button {
+  all: unset;
+  padding: 6px 16px;
+  background-color: rgb(211, 52, 52);
+  height: 32px;
+  color: white;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-image img {
+  width: 530 px;
+  height: 487.061767578125px;
+  filter: drop-shadow(0px 30px 10px rgba(0, 0, 0, 0.35));
+}
+
+.brand-icon img {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+.hero h1 {
+  font-size: 79px;
+  font-weight: 900;
+  font-family: sans-serif;
+  line-height: 100px;
+}
+.hero p {
+  font-family: Poppins;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 16px;
+  line-height: 22px;
+color: #777373;
+}
+
+.hero-btn{
+  display: flex;
+  gap: 20px;
+}
+
+/* Common button style */
+.hero-btn button{
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Primary button */
+.hero-btn #st{
+  background-color: rgb(203, 41, 51);
+  color: white;
+}
+
+/* Secondary button */
+.hero-btn button:last-child{
+  background-color: transparent;
+  border: 1px solid black;
+}
+.brand-icon{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.brand-icon img{
+  width: 40px;        /* icon size */
+  height: auto;
+  cursor: pointer;
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.25));
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.brand-icon img:hover{
+  transform: scale(1.1);
+  filter: drop-shadow(0 8px 12px rgba(0,0,0,0.35));
+}
